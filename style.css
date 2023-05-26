@@ -1,0 +1,327 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: #000;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #f9f9f9;
+}
+header {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+  padding: 10px 7%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+   font-size: 4rem;
+   font-weight: 900;
+}
+header .navbar a {
+  font-size: 1.7rem;
+  font-weight: 900;
+  padding: 0 1rem;
+}
+input {
+  display: none;
+}
+label {
+  font-size: 3rem;
+  visibility: hidden;
+  opacity: 0;
+}
+#home {
+  height: 100vh;
+  width: 100%;
+  background: url(Tea3.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+}
+.content {
+  padding-top: 10%;
+  text-align: center;
+}
+h1 {
+  color: #bae4b8;
+  font-size: 8rem;
+  font-weight: 900;
+}
+p {
+  font-size: 3rem;
+  color: rgb(243, 243, 243);
+  font-weight: 900;
+}
+.btn {
+  margin: 2rem 0;
+  padding: 1rem;
+  color: #fff;
+  background: #306d7e;
+  font-size: 3rem;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+}
+.about {
+  padding: 2rem;
+}
+.abt-content {
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.abt-content img {
+  width: 20%;
+  margin: 2rem;
+}
+.abt-content .abt-text {
+  color: #000;
+}
+#services {
+  width: 100%;
+}
+.heading {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.serv-container {
+  display: flex;
+  gap: 2rem;
+}
+.serv-content img {
+  margin-left: 6rem;
+  margin-top: 3rem;
+  width: 40%;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.514);
+}
+.serv-text {
+  margin-left: -25rem;
+  margin-top: 10%;
+}
+h3 {
+  font-size: 4rem;
+}
+.serv-p {
+  color: #000;
+}
+.testimonial {
+  width: 100%;
+  height: 60vh;
+  margin: 8rem 1rem;
+}
+.test-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.text-content {
+  width: 25%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.514);
+  height: 280px;
+  margin: 0 2rem;
+  background: #dfd6d6;
+  text-align: center;
+}
+.test {
+  color: #000;
+  padding: 3rem;
+}
+.name {
+  color: #999;
+}
+.contact {
+  text-align: center;
+  width: 100%;
+  height: 30vh;
+}
+.foot-container {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  max-width: 100%;
+} 
+footer {
+  background: #dfd6d6;
+  padding: 2rem 0;
+  text-align: center;
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer li {
+  display: inline-block;
+}
+footer li a {
+  padding: 12px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #000;
+}
+footer p {
+  color: #999;
+}
+
+
+
+@media (max-width:768px) {
+  html {
+    font-size: 55%;
+  }
+  label {
+    visibility: visible;
+    opacity: 1;
+    font-size: 2rem;
+  }
+  .abt-content .abt-text {
+    font-size: 1.5rem;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  header .navbar a {
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    background: #f9f9f9;
+    border-radius: 15px;
+    border-bottom: 3px solid rgba(7, 6, 6, 0.37);
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  header input:checked ~ .navbar {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  section {
+    max-width: 100vw;
+    height: 100vh;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-top: 20%;
+  }
+  .con-text {
+    font-size: 3rem;
+  }
+  .abt-content img {
+    width: 60%;
+  }
+  .abt-content {
+    margin-top: 30%;
+    padding: 0;
+  }
+   .serv-container {
+    width: 100%;
+    margin: 2.5rem 0;
+  }
+  h3 {
+  font-size: 2rem;
+}
+.serv-p {
+  font-size: 1.5rem;
+}
+.serv-content img {
+  margin: 0;
+  margin-left: .5rem;
+  width: 35%;
+}
+.btn {
+  font-size: 1.2rem;
+}
+.services {
+  margin-top: -18rem;
+}
+.heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.test-container {
+  display: block;
+  width: 100%;
+}
+.text-content {
+  width: 80%;
+  margin: 3rem 1.6rem;
+}
+  .test {
+  color: #000;
+  padding: 1.5rem;
+  font-size: 2.5rem;
+}
+.testimonial {
+  width: 100%;
+  height: 100vh;
+  margin-top: 140%;
+}
+.contact {
+  text-align: center;
+  width: 100%;
+  margin-top: 190%;
+}
+.contact .btn {
+  margin-top: -2rem;
+}
+footer li a {
+  padding: 6px 4px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+}
+footer p {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+@media (max-width:480) {
+  html {
+    font-size: 45%;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .content .con-text {
+    font-size: 1.5rem;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
+
+
+
+
